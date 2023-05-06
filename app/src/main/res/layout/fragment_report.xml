@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ccededed">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/text_view_profile"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_circle"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:text=""
+                            android:gravity="center"
+                            android:textSize="20dp"/>
+
+                        <TextView
+                            android:id="@+id/txt_campaign_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:paddingLeft="0dp"
+                            android:text=""
+                            android:maxLines="1"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/black"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:alpha=".5"
+                        android:layout_above="@id/txt_campaign_name"
+                        android:background="#325775" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@android:string/copyUrl"
+                        android:paddingLeft="0dp"
+                        android:paddingTop="5dp"
+                        android:text="ASSIGNMENT"
+                        android:textSize="11dp"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@android:string/copyUrl"
+                        android:id="@+id/txt_assignment"
+                        android:paddingLeft="0dp"
+                        android:paddingTop="5dp"
+                        android:text=""
+                        android:textColor="#969696"
+                        android:textSize="11dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Customer basic details"/>
+
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:alpha=".5"
+                    android:background="#325775" />
+
+                <EditText
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/edit_text_name"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edit_text"
+                    android:textSize="14dp"
+                    android:hint="@string/customer_name" />
+
+                <EditText
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/edit_text_phone"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="number"
+                    android:textSize="14dp"
+                    android:background="@drawable/edit_text"
+                    android:hint="@string/customer_phone"/>
+
+                <EditText
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/edit_text_national_id"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textSize="14dp"
+                    android:background="@drawable/edit_text"
+                    android:hint="@string/customer_national_id"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Product details"/>
+
+                    <View
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:alpha=".5"
+                        android:background="#325775" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_spinner"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp">
+                        <com.jaredrummler.materialspinner.MaterialSpinner
+                            android:id="@+id/spinner_product"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            app:ms_text_color="#605274" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <EditText
+                            android:id="@+id/edit_text_product_quantity"
+                            android:layout_weight="50"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="5dp"
+                            android:paddingRight="10dp"
+                            android:paddingLeft="10dp"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:inputType="number"
+                            android:textSize="14dp"
+                            android:background="@drawable/edit_text"
+                            android:hint="@string/product_quantity"/>
+
+                        <EditText
+                            android:id="@+id/edit_text_product_value"
+                            android:layout_weight="50"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="5dp"
+                            android:paddingRight="10dp"
+                            android:paddingLeft="10dp"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:inputType="number"
+                            android:textSize="14dp"
+                            android:background="@drawable/edit_text"
+                            android:hint="@string/product_value"/>
+                    </LinearLayout>
+
+                    <EditText
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/edit_text_extra_field_1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="14dp"
+                        android:background="@drawable/edit_text"
+                        android:hint="@string/product_extra_field_1"/>
+
+                    <EditText
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/edit_text_extra_field_2"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="14dp"
+                        android:background="@drawable/edit_text"
+                        android:hint="@string/product_extra_field_2"/>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Merchandise details"/>
+
+                    <View
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:alpha=".5"
+                        android:background="#325775" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_spinner"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp">
+                        <com.jaredrummler.materialspinner.MaterialSpinner
+                            android:id="@+id/spinner_merchandise"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            app:ms_text_color="#605274" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/edit_text_merchandise_quantity"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:inputType="number"
+                        android:textSize="14dp"
+                        android:background="@drawable/edit_text"
+                        android:hint="@string/merchandise_quantity"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Customer feedback"/>
+
+                    <View
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:alpha=".5"
+                        android:background="#325775" />
+
+
+                    <EditText
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/edit_text_customer_comment"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="14dp"
+                        android:background="@drawable/edit_text"
+                        android:hint="@string/customer_comment"/>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_submit"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="12dp"
+                android:text="SUBMIT"
+                android:textColor="@android:color/white"
+                android:background="@drawable/round_button"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

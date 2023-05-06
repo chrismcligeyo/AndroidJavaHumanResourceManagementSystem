@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#CE1E33</color>
+    <color name="colorPrimaryDark">#B5002A</color>
+    <color name="colorAccent">#8D99AE</color>
+
+    <color name="menuNavigation8menuNotificationBg">#2580fc</color>
+    <color name="menuNavigation17menu">#ffffff</color>
+    <color name="menuNavigation17menuSelected">#267bfe</color>
+
+    <!-- Screens background color-->
+    <color name="bg_screen2">#20d2bb</color>
+
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen2">#14a895</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen2">#8cf9eb</color>
+
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen2</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen2</item>
+    </array>
+
+    <array name="mdcolor_400">
+        <item name="red_400" type="color">#e84e40</item>
+        <item name="pink_400" type="color">#ec407a</item>
+        <item name="purple_400" type="color">#ab47bc</item>
+        <item name="deep_purple_400" type="color">#7e57c2</item>
+        <item name="indigo_400" type="color">#5c6bc0</item>
+        <item name="blue_400" type="color">#738ffe</item>
+        <item name="light_blue_400" type="color">#29b6f6</item>
+        <item name="cyan_400" type="color">#26c6da</item>
+        <item name="teal_400" type="color">#26a69a</item>
+        <item name="green_400" type="color">#2baf2b</item>
+        <item name="light_green_400" type="color">#9ccc65</item>
+        <item name="lime_400" type="color">#d4e157</item>
+        <item name="yellow_400" type="color">#ffee58</item>
+        <item name="orange_400" type="color">#ffa726</item>
+        <item name="deep_orange_400" type="color">#ff7043</item>
+    </array>
+
+    <array name="mdcolor_500">
+        <item name="red_500" type="color">#e51c23</item>
+        <item name="pink_500" type="color">#e91e63</item>
+        <item name="purple_500" type="color">#9c27b0</item>
+        <item name="deep_purple_500" type="color">#673ab7</item>
+        <item name="indigo_500" type="color">#3f51b5</item>
+        <item name="blue_500" type="color">#5677fc</item>
+        <item name="light_blue_500" type="color">#03a9f4</item>
+        <item name="cyan_500" type="color">#00bcd4</item>
+        <item name="teal_500" type="color">#009688</item>
+        <item name="green_500" type="color">#259b24</item>
+        <item name="light_green_500" type="color">#8bc34a</item>
+        <item name="lime_500" type="color">#cddc39</item>
+        <item name="yellow_500" type="color">#ffeb3b</item>
+        <item name="orange_500" type="color">#ff9800</item>
+        <item name="deep_orange_500" type="color">#ff5722</item>
+        <item name="brown_500" type="color">#795548</item>
+        <item name="grey_500" type="color">#9e9e9e</item>
+        <item name="blue_grey_500" type="color">#607d8b</item>
+    </array>
+
+    <color name="event_color_01">#59dbe0</color>
+    <color name="event_color_02">#f57f68</color>
+    <color name="event_color_03">#87d288</color>
+    <color name="event_color_04">#f8b552</color>
+    <color name="toolbar">#efefef</color>
+    <color name="textSub">#76818a</color>
+    <color name="Tex">#404547</color>
+    <color name="strok">#e4e5ea</color>
+    <color name="loginSignup2InputBg">#f1f5f8</color>
+    <color name="loginSignup1Background">#f1f5f8</color>
+</resources>

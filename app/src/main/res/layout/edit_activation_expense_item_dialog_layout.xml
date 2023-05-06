@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:minHeight="281dp"
+    android:minWidth="320dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dialog_info_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Edit Item"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="10dp" />
+
+        <ProgressBar
+            android:id="@+id/progress_dialog"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:progress="25" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Item name *"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="20dp"
+                    android:textSize="14sp"
+                    android:textColor="#898989"/>
+
+                <EditText
+                    android:id="@+id/edit_text_item_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="Item name"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="#b9b9b9"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Item Description"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="20dp"
+                    android:textSize="14sp"
+                    android:textColor="#898989"/>
+
+                <EditText
+                    android:id="@+id/edit_text_item_descrption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="Item description"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="#b9b9b9"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Supplier"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="20dp"
+                    android:textSize="14sp"
+                    android:textColor="#898989"/>
+
+                <EditText
+                    android:id="@+id/edit_text_item_supplier"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="Supplier"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="#b9b9b9"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Unit cost"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="20dp"
+                    android:textSize="14sp"
+                    android:textColor="#898989"/>
+
+                <EditText
+                    android:id="@+id/edit_text_item_unit_cost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="Unit cost"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="#b9b9b9"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Item quantity"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="20dp"
+                    android:textSize="14sp"
+                    android:textColor="#898989"/>
+
+                <EditText
+                    android:id="@+id/edit_text_item_quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="Unit cost"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="#b9b9b9"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Days"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="20dp"
+                    android:textSize="14sp"
+                    android:textColor="#898989"/>
+
+                <EditText
+                    android:id="@+id/edit_text_item_days"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="Item days"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="#b9b9b9"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Amount"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="20dp"
+                    android:textSize="14sp"
+                    android:textColor="#898989"/>
+
+                <EditText
+                    android:id="@+id/edit_text_item_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="#b9b9b9"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:enabled="false"
+                    android:textSize="16sp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:inputType="number"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/dialog_info_edit"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/button_border"
+                        android:text="EDIT"
+                        android:textColor="#409b13"/>
+
+                    <Button
+                        android:id="@+id/dialog_info_cancel"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/button_border_red"
+                        android:text="CANCEL"
+                        android:textColor="#de190b"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.androidstudy.alfoneshub">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".utils.AlfonesCommunication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".planner.AddEventActivity"/>
+        <activity android:name=".planner.PlannerActivity">
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAKkJYOl1xV1eObznIBFJsvmHurlpDnkb0" />
+
+        <service android:name=".utils.firebase.FirebaseNotificationService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".utils.firebase.FirebaseInstanceIDService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".LoginActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".settings.TermsConditionCampaignActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.androidstudy.alfoneshub.settings.ActivationActivity" />
+        </activity>
+        <activity android:name=".ForgotCredentialsActivity" />
+        <activity android:name=".profile.ProfileActivity" />
+        <activity android:name=".reports.ReportHistoryActivity" />
+        <activity android:name=".reports.ReportHistoryDetailActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.androidstudy.alfoneshub.reports.ReportHistoryActivity" />
+        </activity>
+        <activity android:name=".settings.ReportConfirmationActivity" />
+        <activity android:name=".checkin.CheckInActivity" />
+        <activity android:name=".settings.ActivationActivity" />
+        <activity android:name=".settings.TeamLeaderActivity" />
+        <activity android:name=".NotificationDetailsActivity" />
+       <!-- <activity
+            android:name=".WelcomeActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>-->
+        <activity android:name=".CheckResetCodeActivity" />
+        <activity android:name=".ResetPasswordActivity" />
+        <activity android:name=".ProjectManagerMainActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".reports.LocationReportActivity" />
+        <activity android:name=".reports.LocationUserReportActivity" />
+        <activity android:name=".reports.UserReportEntriesActivity" />
+        <activity android:name=".reports.UserReportEntriesDetailsActivity" />
+        <activity android:name=".notifications.NotificationsActivity" />
+        <activity android:name=".locations.ActivationLocationActivity" />
+        <activity android:name=".locations.ActivationLocationUsersActivity" />
+        <activity android:name=".expenses.ExpensesActivity" />
+        <activity android:name=".expenses.activations.ActivationExpensesActivity" />
+        <activity android:name=".expenses.activations.ActivationExpensesItemsActivity" />
+        <activity android:name=".expenses.activations.ActivationExpensesItemDetailsActivity" />
+        <activity android:name=".expenses.general.GeneralExpensesActivity" />
+        <activity android:name=".expenses.general.GeneralExpensesItemsActivity" />
+        <activity android:name=".expenses.general.GeneralExpensesItemDetailsActivity" />
+        <activity android:name=".reports.MyReportActivity" />
+        <activity android:name=".locations.CreateLocationActivity" />
+        <activity android:name=".locations.ActivationLocationUserAddActivity" />
+        <activity android:name=".leaves.LeaveActivity" />
+        <activity android:name=".leaves.LeaveDetailsActivity" />
+        <activity android:name=".payslips.PayslipActivity" />
+        <activity android:name=".payslips.PayslipDetailsActivity" />
+    </application>
+
+</manifest>

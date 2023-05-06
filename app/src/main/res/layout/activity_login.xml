@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.androidstudy.alfoneshub.LoginActivity">
+
+     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fitsSystemWindows="true"
+        tools:ignore="MissingConstraints"><!--added this,added by me rabut,reason - to get rid of Invalid Region.Op - only INTERSECT and DIFFERENCE are allowed
+                                                                                                    	at android.graphics.Canvas.checkValidClipOp and clipRect error -->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="56dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/logo"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Login"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_marginTop="20dp"
+                android:id="@+id/edit_text_email"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edit_text_orange"
+                android:hint="@string/email"
+                android:textSize="14dp"
+                android:inputType="textEmailAddress"/>
+
+            <EditText
+                android:id="@+id/edit_text_password"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edit_text_orange"
+                android:hint="@string/password"
+                android:textSize="14dp"
+                android:inputType="textPassword" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_login"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:layout_gravity="center_horizontal"
+                android:padding="12dp"
+                android:text="Login"
+                android:textSize="12dp"
+                android:textColor="#232323"
+                android:background="@drawable/edit_text_black"
+                android:stateListAnimator="@null"/>
+
+            <TextView
+                android:id="@+id/btn_forgot_credentials"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@android:color/black"
+                android:textSize="12dp"
+                android:text="@string/forgot_credentials"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
